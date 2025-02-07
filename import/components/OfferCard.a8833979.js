@@ -1,5 +1,5 @@
-import { jsx, jsxs } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
+import { jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
 const REMOVE_BTN_STYLE = { position: "absolute", right: "2px", top: "2px" };
 const CARD_STYLE = { position: "relative", display: "flex", justifyContent: "space-between", flexDirection: "column" };
 export function OfferCard({ id, name, regionsGross = [], remove }) {

@@ -1,5 +1,5 @@
-import { jsx, jsxs } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
+import { jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
 export function RegionForm({ onAdd }) {
   const [name, setName] = React.useState("");
   const [goal, setGoal] = React.useState(null);

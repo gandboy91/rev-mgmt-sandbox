@@ -1,5 +1,5 @@
-import { Fragment, jsx, jsxs } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
+import { Fragment, jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
 const PREVIEW_CARD_STYLE = {
   backgroundColor: "transparent",
   border: "1px dashed rgba(255,255,255,.3)",

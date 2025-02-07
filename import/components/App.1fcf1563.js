@@ -1,5 +1,5 @@
-import { jsx, jsxs } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
+import { jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
 import { RegionForm } from "./RegionForm.bc0a92f5.js";
 import { RegionCard } from "./RegionCard.89a732ce.js";
 import { OfferForm } from "./OfferForm.3d72b5a4.js";

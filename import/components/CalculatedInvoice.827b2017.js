@@ -1,5 +1,5 @@
-import { jsx, jsxs } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
+import { jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
 const WRAPPER_STYLE = {
   borderRadius: 4,
   border: "1px solid rgba(255,255,255,.3)",

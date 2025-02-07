@@ -1,6 +1,6 @@
-import { jsx } from "../../_npm/react@19.0.0/jsx-runtime.a4fc5384.js";
-import * as React from "../../_npm/react@19.0.0/03d80e9e.js";
-import * as Plot from "../../_npm/@observablehq/plot@0.6.16/b7d4b5b4.js";
+import { jsx } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
+import * as React from "../../npm/react@19.0.0/03d80e9e.js";
+import * as Plot from "../../npm/@observablehq/plot@0.6.16/b7d4b5b4.js";
 export function SemaphoreChart({ data }) {
   const containerRef = React.useRef();
   React.useEffect(() => {
