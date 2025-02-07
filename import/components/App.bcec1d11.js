@@ -70,7 +70,7 @@ export function App() {
   const offerList = Object.values(offers);
   const invoicesList = Object.values(invoices);
   if (!loggedIn) {
-    return /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("input", { onBlur: checkPass }) });
+    return /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("input", { onchange: checkPass }) });
   }
   return /* @__PURE__ */ jsxs("div", { style: WRAPPER_STYLE, children: [
     /* @__PURE__ */ jsxs("div", { ref: setupBlockRef, children: [
