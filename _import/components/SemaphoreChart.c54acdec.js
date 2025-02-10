@@ -23,8 +23,8 @@ export function SemaphoreChart({ data }) {
           fx: "region",
           dy: -4,
           lineAnchor: "bottom",
-          text: ({ amount }) => amount,
-          fontSize: 16
+          text: ({ amount }) => Math.round(amount),
+          fontSize: 12
         })
       ]
     });

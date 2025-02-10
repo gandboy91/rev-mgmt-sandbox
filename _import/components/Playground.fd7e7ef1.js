@@ -1,8 +1,8 @@
 import { jsx, jsxs } from "../../npm/react@19.0.0/jsx-runtime.a4fc5384.js";
 import * as React from "../../npm/react@19.0.0/03d80e9e.js";
-import { SemaphoreChart } from "./SemaphoreChart.aa2fcbd2.js";
+import { SemaphoreChart } from "./SemaphoreChart.c54acdec.js";
 import { CalculatedInvoice } from "./CalculatedInvoice.827b2017.js";
-import { calculateRevenue } from "../utils/revenue.be788508.js";
+import { calculateRevenue } from "../utils/revenue.602562d9.js";
 const BUTTON_BLOCK_STYLE = { display: "flex", gap: "4px", marginBottom: "8px" };
 const QUARTER_BUTTON_STYLE = { flexGrow: 1, height: 28 };
 const PROCESS_BUTTON_STYLE = { height: 28, minWidth: 100 };

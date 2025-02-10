@@ -75,8 +75,12 @@ export function calculateRegionsNet({ regionTaxWeights, regionsGross, invoiceTax
 
   regionsWithNet.forEach(regionId => {
     const weight = regionTaxWeights[regionId] ?? 0;
-    const restWeight = weight / restWeightTotal;
-    regionsNet[regionId] = floatRound(regionsNet[regionId] + restWeight * taxLeftover, 2);
+    // if all rest weights are 0, we have to spread it equally, because tax should be deducted
+    const leftoverWeight = restWeightTotal > 0
+      ? weight / restWeightTotal
+      : 1 / Object.keys(regionsWithNet).length;
+
+    regionsNet[regionId] = floatRound(regionsNet[regionId] - leftoverWeight * taxLeftover, 2);
   })
 
   return regionsNet;
@@ -98,8 +102,7 @@ export function calculateInvoice(invoice, offers, offersGross, regionNeeds) {
   const invoiceTax = gross - net;
   const regionIds = Object.keys(offerRegionsGross);
 
-  const regionTaxWeights = calculateRegionTaxWeights(regionNeeds, regionIds, net);
-
+  const regionTaxWeights = calculateRegionTaxWeights(regionNeeds, regionIds);
   calculated.regionsNet = calculateRegionsNet({
     regionTaxWeights,
     invoiceTax,

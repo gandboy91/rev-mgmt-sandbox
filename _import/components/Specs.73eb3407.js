@@ -7,7 +7,7 @@ const INFO_TEXT_STYLE = { whiteSpace: "pre", color: "#ccc" };
 export function Specs() {
   const [collapsed, setCollapsed] = React.useState(true);
   if (collapsed) {
-    return /* @__PURE__ */ jsx("div", { style: { display: "flex", justifyContent: "end" }, children: /* @__PURE__ */ jsx("div", { className: "muted", style: COLLAPSE_LINK_STYLE, onClick: () => setCollapsed(false), children: "Specification" }) });
+    return /* @__PURE__ */ jsx("div", { style: { position: "absolute", right: 8, top: 12 }, children: /* @__PURE__ */ jsx("div", { className: "muted", style: COLLAPSE_LINK_STYLE, onClick: () => setCollapsed(false), children: "Specification" }) });
   }
   return /* @__PURE__ */ jsxs("div", { style: NOTE_STYLE, className: "note", children: [
     /* @__PURE__ */ jsx("div", { style: CLOSE_BTN_STYLE, onClick: () => setCollapsed(true), children: "\u2715" }),
