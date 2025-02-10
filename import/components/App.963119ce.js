@@ -7,7 +7,8 @@ import { OfferCard } from "./OfferCard.a8833979.js";
 import { InvoiceForm } from "./InvoiceForm.fa41a510.js";
 import { InvoiceCard } from "./InvoiceCard.1a28b25e.js";
 import { Playground } from "./Playground.8f5f68b0.js";
-const WRAPPER_STYLE = { maxWidth: 800, padding: 12, borderRadius: 4, backgroundColor: "#222" };
+import { Specs } from "./Specs.23f3e052.js";
+const WRAPPER_STYLE = { maxWidth: 800, padding: 12, borderRadius: 4, backgroundColor: "#333" };
 export function App() {
   const [maxIds, setMaxIds] = React.useState({ region: 0, offer: 0, invoice: 0 });
   const [regions, setRegions] = React.useState({});
@@ -73,6 +74,7 @@ export function App() {
     return /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("input", { onChange: checkPass }) });
   }
   return /* @__PURE__ */ jsxs("div", { style: WRAPPER_STYLE, children: [
+    /* @__PURE__ */ jsx(Specs, {}),
     /* @__PURE__ */ jsxs("div", { ref: setupBlockRef, children: [
       /* @__PURE__ */ jsx("h2", { className: "yellow", children: "Regions" }),
       /* @__PURE__ */ jsx("br", {}),
